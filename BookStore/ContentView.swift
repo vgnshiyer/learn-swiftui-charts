@@ -19,7 +19,14 @@ struct ContentView: View {
                 } label: {
                     SimpleBookSalesView(salesViewModel: salesViewModel)
                 }
+                
+                NavigationLink {
+                    SalesByWeekday(salesViewModel: salesViewModel)
+                } label: {
+                    SimpleSalesByWeekday(salesViewModel: salesViewModel)
+                }
             }
+            .listStyle(.sidebar)
             .navigationTitle("Book Store Stats")
         }
     }
