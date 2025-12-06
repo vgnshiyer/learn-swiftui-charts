@@ -63,7 +63,7 @@ class SalesViewModel {
     static var preview: SalesViewModel {
         let vm = SalesViewModel()
         vm.salesData = Sale.threeMonthsExamples()
-        vm.lastTotalSales = 1200
+        vm.lastTotalSales = 500
         return vm
     }
 }
